@@ -1,5 +1,5 @@
 <template>
-  <main class="contentSize mb-[700px]">
+  <main class="contentSize px-3 mb-[700px]">
     <section class="z-10" :class="zipStatus=='close'?'animate-show':'animate-hide'" id="banner">
       <banner class="z-10"/>
     </section>
@@ -12,18 +12,18 @@
       <div class="w-full bg-gray-950">
         <zipImage class="z-50" :class="zipStatus=='close'?'animate-show':'animate-hide'"/>
       </div>
-      <div class="thisBg2 w-full h-10"></div>
+      <div class="thisBg2 w-full sm:h-10 h-20"></div>
     </section>
 
     <!-- work examples -->
-    <section class="w-full mt-4 -translate-y-80" :class="zipStatus=='open'?'animate-showContent':'animate-hide'">
+    <section class="w-full mt-4 -translate-y-20" :class="zipStatus=='open'?'animate-showContent':'animate-hide'">
 
-      <drawerArrow class="mx-auto mt-10 mb-32 animate-bounce"/>
+      <drawerArrow class="mx-auto mt-10 mb-20 animate-bounce"/>
       
       <contentTitle/>
       <!-- cardBox -->
-      <section class="p-3 bg-gray-800 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 sm:rounded-md shadow-sm shadow-gray-500">
-        <modernLoaderCard v-for="i in 4"/>
+      <section class="p-3 bg-purple-900 bg-opacity-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 rounded-md border-2 border-purple-900">
+        <loadingCard v-for="i in 4"/>
       </section>
     </section>
   </main>
@@ -34,7 +34,7 @@ import banner from '@/components/banner.vue';
 import zipImage from '../components/homeComponent/zipImage.vue';
 import contentTitle from '../components/homeComponent/contentTitle.vue';
 import drawerArrow from '../components/icons/drawerArrow.vue';
-import modernLoaderCard from '../composables/modernLoaderCard.vue';
+import loadingCard from '../components/icons/loadingCard.vue';
 import {ref , onMounted} from 'vue';
 let zipStatus = ref('close');
 

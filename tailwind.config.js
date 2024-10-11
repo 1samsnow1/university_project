@@ -47,7 +47,7 @@ module.exports = {
         'hide' : 'hide 1s forwards',
         'expandNavBar':'expand 2s forwards',
         'phoneExpandNavBar':'expand 1s forwards',
-        'bounceUpAndDown': 'bounceHigh 1s linear infinite',
+        'bounceUpAndDown': 'bounceHigh 1.5s linear infinite',
         'zipAnimation' : 'moveZip 3s linear infinite',
         'closeZip' : 'showZip 1s linear forwards',
         'openZip' : 'hideZip 1s linear forwards',
