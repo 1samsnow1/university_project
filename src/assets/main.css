@@ -14,3 +14,9 @@ body {
 .contentSize {
   @apply  w-full sm:w-4/5 sm:max-w-4xl mx-auto
 }
+.footerContentBox {
+  @apply flex flex-col justify-start text-yellow-100
+}
+.footerInfoStyle {
+  @apply flex justify-start items-center gap-2
+}

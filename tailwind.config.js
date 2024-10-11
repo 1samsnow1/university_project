@@ -51,8 +51,11 @@ module.exports = {
         'zipAnimation' : 'moveZip 3s linear infinite',
         'closeZip' : 'showZip 1s linear forwards',
         'openZip' : 'hideZip 1s linear forwards',
-        'showContent' : 'show 2.5s forwards',
+        'showContent' : 'show 1s forwards',
         'hideContent' : 'hide 0.5s forwards',
+      },
+      backgroundImage: {
+        'city': "url('@/assets/images/darkCity.jpg')"
       }
      },
    },
