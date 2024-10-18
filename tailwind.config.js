@@ -10,16 +10,28 @@ module.exports = {
           '100%':{transform : 'translateY(0px) scale(1)'}
         },
         moveZip :{
-          '0%':{transform : 'translateY(288px)'},
-          '100%':{transform : 'translateY(-288px)'}
+          '0%':{transform : 'translateY(75px)'},
+          '100%':{transform : 'translateY(-75px)'}
         },
-        showZip :{
-          '0%':{transform : 'translateY(-100px)'},
+        moveDownZip :{
+          '0%':{transform : 'translateY(0px)'},
+          '100%':{transform : 'translateY(20px)'}
+        },
+        moveUpZip :{
+          '0%':{transform : 'translateY(20px)'},
           '100%':{transform : 'translateY(0px)'}
         },
-        hideZip :{
-          '0%':{transform : 'translateY(0px)'},
-          '100%':{transform : 'translateY(-300px)'}
+        openUp:{
+          '0%' : {transform : 'translateY(-20px)',height :'0rem'},
+          '100%' : {transform : 'translateY(0px)', height :'6.5rem'},
+        },
+        closeUp :{
+          '0%' : {transform : 'translateY(0px)',height :'6.5rem'},
+          '100%' : {transform : 'translateY(-20px)', height :'0rem'},
+        },
+        rotateDown :{
+          '0%' :{transform: 'rotate(0deg)'},
+          '100%' :{transform: 'rotate(180deg)'},
         },
         bounceHigh :{
           '0%':{transform : 'translateY(-10rem)'},
@@ -49,10 +61,13 @@ module.exports = {
         'phoneExpandNavBar':'expand 1s forwards',
         'bounceUpAndDown': 'bounceHigh 1.5s linear infinite',
         'zipAnimation' : 'moveZip 3s linear infinite',
-        'closeZip' : 'showZip 1s linear forwards',
-        'openZip' : 'hideZip 1s linear forwards',
+        'closeZip' :'moveDownZip 0.5s linear forwards',
+        'openZip' :'moveUpZip 0.5s linear forwards',
         'showContent' : 'show 1s forwards',
         'hideContent' : 'hide 0.5s forwards',
+        'rotateDown' : 'rotateDown 1s linear forwards',
+        'openSideMenu' : 'openUp 0.5s linear forwards',
+        'closeSideMenu' : 'closeUp 0.5s linear forwards',
       },
       backgroundImage: {
         'city': "url('@/assets/images/darkCity.jpg')"

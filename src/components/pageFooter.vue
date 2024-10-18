@@ -1,6 +1,6 @@
 <template>
-    <section class="w-full bg-gradient-to-b from-transparent to-gray-900 py-20">
-        <div class="contentSize flex justify-between items-start">
+    <section class="w-full bg-gradient-to-b from-transparent to-gray-900 pb-20 pt-5">
+        <div class="contentSize flex flex-col sm:flex-row gap-4 justify-between items-start">
             <workPlaceInfo/>
             <socialAddress/>
         </div>

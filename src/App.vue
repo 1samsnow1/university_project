@@ -1,8 +1,9 @@
 <template>
+    <!-- header -->
     <pageHeader/>
-    
+    <!-- main content -->
     <RouterView />
-
+    <!-- footer -->
     <pageFooter/>
 </template>
 

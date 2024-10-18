@@ -9,7 +9,7 @@
   @apply font-serif
 }
 body {
-  @apply bg-gray-950
+  @apply bg-gray-900 sm:bg-gray-950
 }
 .contentSize {
   @apply  w-full sm:w-4/5 sm:max-w-4xl mx-auto
