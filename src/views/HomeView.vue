@@ -21,7 +21,8 @@
   
         <contentTitle class="z-50"/>
         <!-- cardBox -->
-        <section class="z-50 px-3 py-6 bg-purple-900 bg-opacity-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 rounded-md border-2 border-purple-900">
+        <section class="z-50 relative px-3 pb-4 pt-8 bg-purple-900 bg-opacity-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 rounded-md border-2 border-purple-900">
+          <toProductsButton/>
           <loadingCard class="z-50" v-for="i in 4" v-if="!cardLoad"/>
           <card class="z-50" v-for="i in 4" v-else/>
         </section>
@@ -32,14 +33,14 @@
         <!-- members section -->
         <section>
           <h2 class="text-2xl darkTextBg text-transparent text-center my-10 pb-2 border-b-2 border-blue-400">اعضای انجمن</h2>
-          <div class="md:grid md:grid-cols-4 gap-3 flex items-center pb-2 overflow-x-scroll md:overflow-hidden">
+          <div class="md:grid md:grid-cols-4 gap-3 flex items-center pb-2 overflow-x-scroll scrollDirection md:overflow-hidden">
             <member v-for="i in 4"/>
           </div>
         </section>
       </section>
     </main>
 
-    <aside class="sticky hidden lg:block translate-y-9 left-10">
+    <aside class="sticky hidden lg:block translate-y-9 top-10 left-10">
       <leftAside/>
     </aside>
   </section>
@@ -52,6 +53,7 @@ import leftAside from '../components/homeComponent/leftAside.vue';
 import boxArch from '../components/homeComponent/boxArch.vue';
 import contentTitle from '../components/homeComponent/contentTitle.vue';
 import loadingCard from '../components/icons/loadingCard.vue';
+import toProductsButton from '../components/homeComponent/toProductsButton.vue'
 import card from '../components/homeComponent/card.vue';
 import teamInfo from '../components/homeComponent/teamInfo.vue';
 import member from '../components/homeComponent/member.vue';
@@ -76,7 +78,10 @@ setTimeout(() => {
     transform: translateY(-9rem);
   }
   20%{
-    transform: translateY(-14rem);
+    transform: translateY(-17rem);
   }
+}
+.scrollDirection {
+  direction: ltr;
 }
 </style>
