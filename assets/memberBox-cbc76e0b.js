@@ -1,1 +1,0 @@
-import{a as e,c as r,F as o,r as a,e as s,h as t}from"./index-2d0d8d4f.js";const c={class:"bg-gray-100 border-b-2 border-gray-500 mt-6 px-3 pb-2 flex items-center gap-6 overflow-x-scroll scrollDirection darkScrollBar rounded-md"},i={__name:"memberBox",setup(n){return(l,m)=>(e(),r("div",c,[(e(),r(o,null,a(6,_=>s(t)),64))]))}};export{i as _};
